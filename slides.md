@@ -20,7 +20,7 @@ css: unocss
 
 # Earth
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="three.js Earth" src="https://codepen.io/qkevinto/embed/EVGrGq?default-tab=result&zoom=0.25" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="three.js Earth" src="https://codepen.io/qkevinto/embed/EVGrGq?default-tab=result&zoom=0.25" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/qkevinto/pen/EVGrGq">
   three.js Earth</a> by Kevin (<a href="https://codepen.io/qkevinto">@qkevinto</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -30,7 +30,7 @@ css: unocss
 
 # Solar System
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Solar System animation - Pure CSS" src="https://codepen.io/kowlor/embed/ZYYQoy?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Solar System animation - Pure CSS" src="https://codepen.io/kowlor/embed/ZYYQoy?default-tab=result&zoom=0.5" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/kowlor/pen/ZYYQoy">
   Solar System animation - Pure CSS</a> by Malik Dellidj (<a href="https://codepen.io/kowlor">@kowlor</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -40,7 +40,7 @@ css: unocss
 
 # Space Globe
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Space globe - Three.js" src="https://codepen.io/isladjan/embed/bGpjZwN?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Space globe - Three.js" src="https://codepen.io/isladjan/embed/bGpjZwN?default-tab=result&zoom=0.5" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/isladjan/pen/bGpjZwN">
   Space globe - Three.js</a> by isladjan (<a href="https://codepen.io/isladjan">@isladjan</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -50,7 +50,7 @@ css: unocss
 
 # Warm Hole
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="WormHole" src="https://codepen.io/devildrey33/embed/zKBpmq?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="WormHole" src="https://codepen.io/devildrey33/embed/zKBpmq?default-tab=result&zoom=0.5" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/devildrey33/pen/zKBpmq">
   WormHole</a> by Josep Antoni Bover (<a href="https://codepen.io/devildrey33">@devildrey33</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -60,7 +60,7 @@ css: unocss
 
 # Floating Heart
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Floating heart" src="https://codepen.io/yuanchuan/embed/wZJqNK?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Floating heart" src="https://codepen.io/yuanchuan/embed/wZJqNK?default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/yuanchuan/pen/wZJqNK">
   Floating heart</a> by yuanchuan (<a href="https://codepen.io/yuanchuan">@yuanchuan</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -70,7 +70,7 @@ css: unocss
 
 # Loader
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Single element Slack loader" src="https://codepen.io/CrocoDillon/embed/DMNWjR?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Single element Slack loader" src="https://codepen.io/CrocoDillon/embed/DMNWjR?default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/CrocoDillon/pen/DMNWjR">
   Single element Slack loader</a> by CrocoDillon (<a href="https://codepen.io/CrocoDillon">@CrocoDillon</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -132,16 +132,20 @@ css: unocss
 </style>
 
 ---
+info: 108-tastes
+---
 
 # 108 Tastes
 
-<iframe height="800" style="width: 200%; transform: scale(0.5); transform-origin: top left;" src="http://localhost/108/"></iframe>
+<!-- reload the page -->
+<iframe v-if="$slidev.nav.route.meta.info === '108-tastes'" height="800" style="width: 200%; transform: scale(0.5); transform-origin: top left;" loading="lazy" src="http://67.219.103.113/108-tastes/"></iframe>
+<iframe v-if="$slidev.nav.route.meta.info !== '108-tastes'" height="800" style="width: 200%; transform: scale(0.5); transform-origin: top left;" loading="lazy" src="http://67.219.103.113/108-tastes/"></iframe>
 
 ---
 
 # Icon
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Animated CSS Mail Button" src="https://codepen.io/jakegilesphillips/embed/MveNLe?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Animated CSS Mail Button" src="https://codepen.io/jakegilesphillips/embed/MveNLe?default-tab=result&zoom=0.5" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/jakegilesphillips/pen/MveNLe">
   Animated CSS Mail Button</a> by Jake Giles-Phillips (<a href="https://codepen.io/jakegilesphillips">@jakegilesphillips</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -151,7 +155,7 @@ css: unocss
 
 # Button
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Download Button Animation" src="https://codepen.io/aaroniker/embed/MWgNKGr?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Download Button Animation" src="https://codepen.io/aaroniker/embed/MWgNKGr?default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/aaroniker/pen/MWgNKGr">
   Download Button Animation</a> by Aaron Iker (<a href="https://codepen.io/aaroniker">@aaroniker</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -161,7 +165,7 @@ css: unocss
 
 # Animated Background
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Animated Background" src="https://codepen.io/MarcoGuglielmelli/embed/ExGYae?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Animated Background" src="https://codepen.io/MarcoGuglielmelli/embed/ExGYae?default-tab=result&zoom=0.5" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/MarcoGuglielmelli/pen/ExGYae">
   Animated Background</a> by Marco Guglielmelli (<a href="https://codepen.io/MarcoGuglielmelli">@MarcoGuglielmelli</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -171,7 +175,7 @@ css: unocss
 
 # Animated SVG
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="City Illustration" src="https://codepen.io/lisilinhart/embed/MoqMQq?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="City Illustration" src="https://codepen.io/lisilinhart/embed/MoqMQq?default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/lisilinhart/pen/MoqMQq">
   City Illustration</a> by Lisi (<a href="https://codepen.io/lisilinhart">@lisilinhart</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -181,7 +185,7 @@ css: unocss
 
 # Animated SVG
 
-<iframe height="400" style="width: 300px" scrolling="no" title="SVG Animation" src="https://codepen.io/jjperezaguinaga/embed/DZxRmb?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 300px" scrolling="no" title="SVG Animation" src="https://codepen.io/jjperezaguinaga/embed/DZxRmb?default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/jjperezaguinaga/pen/DZxRmb">
   SVG Animation</a> by jjperezaguinaga (<a href="https://codepen.io/jjperezaguinaga">@jjperezaguinaga</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -191,7 +195,7 @@ css: unocss
 
 # Fully Responsive Expandable Grid Layout
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Fully Responsive Expandable Grid Layout" src="https://codepen.io/mrspok407/embed/EyrWaw?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Fully Responsive Expandable Grid Layout" src="https://codepen.io/mrspok407/embed/EyrWaw?default-tab=result&zoom=0.5" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/mrspok407/pen/EyrWaw">
   Fully Responsive Expandable Grid Layout</a> by Ruslan Pivovarov (<a href="https://codepen.io/mrspok407">@mrspok407</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -201,7 +205,7 @@ css: unocss
 
 # Slider
 
-<iframe height="400" style="width: 100%;" scrolling="no" title="Responsive Parallax Drag-slider With Transparent Letters" src="https://codepen.io/mrspok407/embed/bwLwvL?default-tab=result&zoom=0.5" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="400" style="width: 100%;" scrolling="no" title="Responsive Parallax Drag-slider With Transparent Letters" src="https://codepen.io/mrspok407/embed/bwLwvL?default-tab=result&zoom=0.5" frameborder="no" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/mrspok407/pen/bwLwvL">
   Responsive Parallax Drag-slider With Transparent Letters</a> by Ruslan Pivovarov (<a href="https://codepen.io/mrspok407">@mrspok407</a>)
   on <a href="https://codepen.io">CodePen</a>.
@@ -211,4 +215,5 @@ css: unocss
 
 # Slider
 
+Please scroll down to see a demo.
 <iframe height="800" style="width: 200%; transform: scale(0.5); transform-origin: top left;" src="https://splidejs.com/"></iframe>
