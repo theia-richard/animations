@@ -1,0 +1,7 @@
+#slide-container > .absolute.opacity-0 {
+    opacity: 1;
+}
+
+.slidev-layout th {
+    text-align: center;
+}

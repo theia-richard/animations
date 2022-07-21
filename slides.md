@@ -16,6 +16,13 @@ css: unocss
 
 # Examples of Web Animation
 
+| Shortcuts | Button | Description |
+| --- | --- | --- |
+| <kbd>right</kbd> | <carbon-arrow-right class="inline-icon-btn"/> | next slide |
+| <kbd>left</kbd> | <carbon-arrow-left class="inline-icon-btn"/> | previous slide |
+| <kbd>o</kbd> | <carbon-apps class="inline-icon-btn"/> | toggle slides overview |
+| <kbd>f</kbd> | <carbon-maximize class="inline-icon-btn"/> <carbon-minimize class="inline-icon-btn"/> | toggle fullscreen |
+
 ---
 
 # Earth
@@ -103,8 +110,8 @@ css: unocss
     animation-duration: 3000ms;
     animation-iteration-count: infinite;
     margin-bottom: 8px;
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
   }
 
   .linear {
@@ -138,8 +145,8 @@ info: 108-tastes
 # 108 Tastes
 
 <!-- reload the page -->
-<iframe v-if="$slidev.nav.route.meta.info === '108-tastes'" height="800" style="width: 200%; transform: scale(0.5); transform-origin: top left;" loading="lazy" src="http://67.219.103.113/108-tastes/"></iframe>
-<iframe v-if="$slidev.nav.route.meta.info !== '108-tastes'" height="800" style="width: 200%; transform: scale(0.5); transform-origin: top left;" loading="lazy" src="http://67.219.103.113/108-tastes/"></iframe>
+<iframe v-if="$slidev.nav.route.meta.info === '108-tastes'" height="800" style="width: 200%; transform: scale(0.5); transform-origin: top left;" loading="lazy" src="./108-tastes/index.html"></iframe>
+<iframe v-if="$slidev.nav.route.meta.info !== '108-tastes'" height="800" style="width: 200%; transform: scale(0.5); transform-origin: top left;" loading="lazy" src="./108-tastes/index.html"></iframe>
 
 ---
 
