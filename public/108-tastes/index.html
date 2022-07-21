@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Tutorial</title>
+    <style>
+        html,
+        body,
+        .layer {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .layer {
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+
+        .layer.radial-gradient {
+            background: no-repeat radial-gradient(#AB2A45, #480709);
+        }
+
+        .layer.fish {
+            overflow: hidden;
+        }
+
+        .layer.fish img {
+            filter: drop-shadow(0 20px 50px #00000029);
+            height: 1054.73px;
+            left: 832.04px;
+            position: absolute;
+            top: 299.63px;
+            width: 1097.96px;
+        }
+
+        .loading .layer.fish img {
+            left: 1930px;
+        }
+
+        .layer.linear-gradient {
+            background:
+                no-repeat bottom / auto 407px linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.40446)),
+                no-repeat bottom / auto 331px linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4494)),
+                no-repeat linear-gradient(90deg, rgba(0, 0, 0, 0), #480709);
+        }
+
+        .layer.wave {
+            overflow: hidden;
+        }
+
+        .layer.wave img {
+            bottom: -26.6157vh;
+            left: 0;
+            position: absolute;
+            width: 100vw;
+        }
+
+        .loading .layer.wave img {
+            bottom: -55.8652vw;
+        }
+
+        .layer.duck {
+            overflow: hidden;
+        }
+
+        .layer.duck img {
+            filter: drop-shadow(0 15px 50px #00000033);
+            height: 526px;
+            left: -58.17px;
+            position: absolute;
+            top: 147.38px;
+            width: 747.67px;
+        }
+
+        .loading .layer.duck img {
+            left: -747.67px;
+        }
+
+        .layer.switch {
+            overflow: hidden;
+        }
+
+        .layer.switch .left,
+        .layer.switch .right {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 50%;
+        }
+
+        .layer.switch .left {
+            left: 0;
+        }
+
+        .layer.switch .right {
+            right: 0;
+        }
+
+        .layer.switch img {
+            height: 713.31px;
+            left: 118px;
+            mix-blend-mode: color-burn;
+            pointer-events: none;
+            position: absolute;
+            top: 183px;
+            width: 713px;
+        }
+
+        .layer.switch .left:hover ~ img,
+        .layer.switch .right:hover ~ img {
+            transition-duration: 300ms;
+        }
+
+        .layer.switch .right:hover ~ img {
+            left: calc(100% - 831px);
+        }
+
+        .loading .layer.switch img {
+            left: -713px;
+        }
+
+        .animated {
+            opacity: 1;
+            transition: all 1s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .loading .animated {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body class="loading">
+    <div class="layer radial-gradient"></div>
+    <div class="layer fish"><img class="animated" src="./images/fish.png" /></div>
+    <div class="layer linear-gradient"></div>
+    <div class="layer wave"><img class="animated" src="./images/wave.svg" /></div>
+    <div class="layer duck"><img class="animated" src="./images/duck.png" /></div>
+    <div class="layer switch">
+        <div class="left"></div>
+        <div class="right"></div>
+        <img class="animated" src="./images/logo.svg" />
+    </div>
+
+    <script>
+        Promise.all(
+            Array.from(document.images)
+                .filter(img => !img.complete)
+                .map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))
+        ).then(() => {
+            document.body.classList.remove("loading");
+        });
+    </script>
+</body>
+
+</html>
